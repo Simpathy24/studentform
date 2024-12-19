@@ -1,0 +1,210 @@
+body {
+  font-family: 'Archivo', sans-serif;
+  background: #C4E8EF;
+}
+
+.container {
+  max-width: 900px;
+  width: 100%;
+  border-radius: 6px;
+  padding: 30px;
+  margin: 0 auto;
+  background-color: #215064;
+  color: white;
+}
+
+header {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.container form .details {
+  margin-top: 10px;
+}
+
+.container form .endfields {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+
+.datefield label,
+.largefield label,
+.smallfield label,
+.mediumfield label {
+  font-size: 15px;
+  color: white;
+  margin-bottom: 5px; /* Adds space between label and input */
+}
+
+.datefield input,
+.largefield input,
+.smallfield input,
+.mediumfield input,
+.largefield select,
+.smallfield select,
+.mediumfield select {
+  height: 30px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  font-size: 14px;
+  background: white;
+  color: black;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+select {            /* drop down */
+    height: 30px; 
+    padding: 5px; 
+  }
+
+.datefield {
+  display: flex;
+  width: 150px;
+  flex-direction: column;
+}
+
+.largefield {
+  display: flex;
+  width: 400px;
+  flex-direction: column;
+  margin: 4px 0;
+}
+.mediumfield {
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    margin: 4px 0;
+  }
+
+.smallfield {
+  display: flex;
+  width: 150px;
+  flex-direction: column;
+  margin: 4px 0;
+}
+
+.form-row.dualfield {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Adds space between two fields */
+  }
+  
+  .dualfield .twofield {
+    display: flex;
+    flex-direction: column;
+    width: 80%; 
+    margin: 4px 0;
+  }
+
+  textarea {
+    width: 550px;
+    height: 100px; 
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+    resize: none; /* Prevent resizing */
+  }
+  
+  .additional-section .largefield {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .additional-section label {
+    font-size: 15px;
+    margin-bottom: 5px;
+    color: white;
+  }
+  
+  .spacer-150 {
+    height: 150px; /* blank space */
+  }
+
+  .spacer-50 {
+    height: 50px; /* blank space */
+  }
+
+  .spacer-20 {
+    height: 20px; /* blank space */
+  }
+
+  .centersign{
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center;
+    margin-left: 455px;
+
+  }
+  .signsection {
+    display: flex;
+    justify-content: space-between;
+    gap: 250px; /* Adds space between two fields */
+    
+  }
+  
+  .signsection .signfield {
+    display: flex;
+    flex-direction: column;
+    width: 250px; 
+    margin: 4px 0;
+  }
+
+  
+  .signfield label {
+    color: #fff; /* Adjust to match your design */
+    text-align: center; /* Center-align label text */
+  }
+  .center{
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center;
+    margin-left: 455px;
+    margin-top: 50px;
+  }
+
+
+  .form-footer {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+    margin-top: 30px; 
+    margin-left: 900px;
+    align-items: flex-end; 
+
+  }
+  
+  .submit, .cancel {
+    width: 200px; /* Set consistent button width */
+    height: 40px; /* Set button height */
+    border: none;
+    border-radius: 27.5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .cancel {
+    background-color: #215064;
+    color: white;
+    border: 3px solid #fff;
+  }
+  
+  .submit {
+    background-color: #FCDD62; /* Red for cancel */
+    color: #215064;
+  }
+  
+
+
+

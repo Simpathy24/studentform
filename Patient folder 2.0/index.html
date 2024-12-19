@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@800&display=swap">
+  <title>Patient Management System</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>Health Examination Record</header>
+
+    <form action="#">
+      <div class="form first">
+        <div class="details personal">
+          <div class="endfields">
+            <div class="datefield">
+              <label>Date:</label>
+              <input type="date" required>
+            </div>
+          </div>
+          <div class="mediumfield">
+            <label>Name:</label>
+            <input type="text" placeholder="Full Name" required>
+          </div>
+          <div class="smallfield">
+            <label>Age:</label>
+            <input type="number" placeholder="Age" required>
+          </div>
+          <div class="largefield">
+            <label>Address:</label>
+            <input type="text" placeholder="Complete Address" required>
+          </div>
+          <div class="smallfield">
+            <label>Sex:</label>
+            <select required>
+              <option value="" disabled selected>Select Gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div class="smallfield">
+            <label>Date of Birth:</label>
+            <input type="date" required>
+          </div>
+          <div class="smallfield">
+            <label>Civil Status:</label>
+            <select required>
+              <option value="" disabled selected>Select Civil Status</option>
+              <option value="Single">Single</option>
+              <option value="Married">Married</option>
+              <option value="Divorced">Divorced</option>
+              <option value="Widowed">Widowed</option>
+            </select>
+          </div>
+          <div class="largefield">
+            <label>Place of Birth:</label>
+            <input type="text" placeholder="Place of Birth" required>
+          </div>
+          <div class="mediumfield">
+            <label>Contact Number:</label>
+            <input type="tel" placeholder="Contact Number" pattern="[0-9]{10}" required>
+          </div>
+          <div class="smallfield">
+            <label>Course Yr/Section:</label>
+            <input type="text" placeholder="Course Yr/Section" required>
+          </div>
+          <div class="mediumfield">
+            <label>Guardian’s Name:</label>
+            <input type="text" placeholder="Guardian’s Name" required>
+
+            <div class="spacer-150"></div> <!-- add space-->
+
+
+            <div class="form-row dualfield">
+          <div class="twofield">
+            <label>Blood Pressure:</label>
+            <input type="text" placeholder="e.g., 120/80" required />
+          </div>
+          <div class="twofield">
+            <label>Vision:</label>
+            <input type="text" placeholder="e.g., 20/20" required />
+          </div>
+        </div>
+
+        <div class="form-row dualfield">
+          <div class="twofield">
+            <label>Height:</label>
+            <input type="text" placeholder="Height in cm" required />
+          </div>
+          <div class="twofield">
+            <label>With Glasses:</label>
+            <input type="text" placeholder="Vision with Glasses" required />
+          </div>
+        </div>
+
+        <div class="form-row dualfield">
+          <div class="twofield">
+            <label>Weight:</label>
+            <input type="text" placeholder="Weight in kg" required />
+          </div>
+          <div class="twofield">
+            <label>Without Glasses:</label>
+            <input type="text" placeholder="Vision without Glasses" required />
+          </div>
+        </div>
+
+        <div class="form-row dualfield">
+          <div class="twofield">
+            <label>BMI:</label>
+            <input type="text" placeholder="Body Mass Index" required />
+          </div>
+          <div class="twofield">
+            <label>Ideal Body Weight:</label>
+            <input type="text" placeholder="Ideal Weight in kg" required />
+          </div>
+      </div>
+
+      <div class="spacer-50">
+      </div> <!--add space-->
+
+      <span>PHYSICAL EXAMINATION:</span>
+      <div class="spacer-20">
+      </div> <!--add space-->
+
+      <div class="largefield">
+        <label>EENT:</label>
+        <input type="text" placeholder="Notes" required>
+      </div>
+      <div class="largefield">
+        <label>Lungs:</label>
+        <input type="text" placeholder="Notes" required>
+      </div>
+      <div class="largefield">
+        <label>Heart:</label>
+        <input type="text" placeholder="Notes" required>
+      </div>
+      <div class="largefield">
+        <label>Abdomen:</label>
+        <input type="text" placeholder="Notes" required>
+      </div>
+      <div class="largefield">
+        <label>Extremities:</label>
+        <input type="text" placeholder="Notes" required>
+      </div>
+      <div class="form additional-section">
+        <div class="largefield">
+          <label>History of Previous Illness:</label>
+          <textarea rows="3" placeholder="Enter history of previous illness" required></textarea>
+        </div>
+      
+        <div class="largefield">
+          <label>Diagnosis/Assessment:</label>
+          <textarea rows="3" placeholder="Enter diagnosis or assessment" required></textarea>
+        </div>
+      
+        <div class="largefield">
+          <label>Recommendation:</label>
+          <textarea rows="3" placeholder="Enter recommendations" required></textarea>
+        </div>
+      </div>
+
+      <div class="spacer-50">
+    </div> <!--add space-->
+
+      <div class="centersign">
+        <div class="signsection">
+            <div class="signfield">
+              <input type="text" placeholder=" " required />
+              <label>Signature of Nurse</label>
+            </div>
+            <div class="signfield">
+              <input type="text" placeholder=" " required />
+              <label>Signature of Examinee</label>
+            </div>
+          </div>
+      </div>
+      <div class="center">
+      <div class="signsection">
+        <div class="signfield">
+          <input type="text" placeholder=" " required />
+          <label>Signature of Physician</label>
+        </div>
+    </div>
+    </div>
+    
+    <div class="form-footer">
+        <button type="button" class="cancel">Cancel</button>
+        <button type="submit" class="submit">Submit</button>
+      </div>
+
+        </div>
+        </div>
+        </div>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

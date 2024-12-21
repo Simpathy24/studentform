@@ -15,7 +15,47 @@
     <header>Patient Record</header>
 
     <form action="#">
+      <div class="form first">
+        <div class="details personal">
+          <div class="spacer-50"></div>
+          <div class="mediumfield">
+            <label>Name:</label>
+            <input type="text" placeholder="Full Name" required>
+          </div>
+          <div class="smallfield">
+            <label>Age:</label>
+            <input type="number" placeholder="Age" required>
+          </div>
+          <div class="largefield">
+            <label>Address:</label>
+            <input type="text" placeholder="Complete Address" required>
+          </div>
+          <div class="smallfield">
+            <label>Course:</label>
+            <select required>
+              <option value="" disabled selected>Select Course</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
       
+          <div class="largefield">
+            <label for="notefield">Notes:</label>
+            <textarea id="notefield" rows="4" placeholder="Enter notes here" required></textarea>
+          </div>
+          
+      </div>
+    
+    <div class="form-footer">
+        <button type="button" class="cancel">Cancel</button>
+        <button type="submit" class="submit">Submit</button>
+      </div>
+
+        </div>
+        </div>
+        </div>
 
     </form>
   </div>

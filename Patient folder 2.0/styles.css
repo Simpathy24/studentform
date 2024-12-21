@@ -1,89 +1,142 @@
+/* Body styles */
 body {
-  font-family: 'Archivo', sans-serif;
+  font-family: var(--font-inter);
   background: #C4E8EF;
 }
 
+/* Root variables */
+:root {
+  --font-archivo: 'Archivo', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+}
+
+/* Container styles */
 .container {
   max-width: 900px;
   width: 100%;
-  border-radius: 6px;
-  padding: 30px;
   margin: 0 auto;
   background-color: #215064;
+  padding: 30px;
   color: white;
+  border-radius: 6px;
 }
 
+/* Header styles */
 header {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 20px;
+  font-family: var(--font-archivo);
 }
 
+/* Form details */
 .container form .details {
   margin-top: 10px;
 }
 
+/* Form end fields */
 .container form .endfields {
   display: flex;
   justify-content: flex-end;
 }
 
-
-
+/* Labels for various fields */
 .datefield label,
 .largefield label,
 .smallfield label,
 .mediumfield label {
   font-size: 15px;
   color: white;
-  margin-bottom: 5px; /* Adds space between label and input */
+  margin-bottom: 5px;
 }
 
-.datefield input,
-.largefield input,
-.smallfield input,
-.mediumfield input,
-.largefield select,
-.smallfield select,
-.mediumfield select {
-  height: 30px;
-  margin: 8px 0;
-  border-radius: 8px;
-  border: 1px solid #ccc;
+/* Input and select field styles */
+input,
+select,
+textarea,
+#tofield,
+#comment {
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background: transparent;
   padding: 5px;
   font-size: 14px;
-  background: white;
-  color: black;
   box-sizing: border-box;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+  border-radius: 0;
+  outline: none;
+  color: white;
 }
 
-select {            /* drop down */
-    height: 30px; 
-    padding: 5px; 
-  }
+/* Notefield styles */
+#notefield {
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background: transparent;
+  padding: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+  border-radius: 0;
+  outline: none;
+  color: white;
+  height: 500px;
+}
 
+/* Placeholder styles */
+input::placeholder,
+textarea::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+/* Focus styles */
+input:focus,
+select:focus,
+textarea:focus,
+#notefield:focus,
+#tofield:focus,
+#comment:focus {
+  border-bottom: 2px solid #3498db;
+}
+
+/* Select field styles */
+select {
+  height: 30px;
+  padding: 5px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+}
+
+/* Options within select */
+select option {
+  color: black;
+}
+
+/* Datefield styles */
 .datefield {
   display: flex;
   width: 150px;
   flex-direction: column;
 }
 
+/* Large field styles */
 .largefield {
   display: flex;
   width: 400px;
   flex-direction: column;
   margin: 4px 0;
 }
-.mediumfield {
-    display: flex;
-    width: 300px;
-    flex-direction: column;
-    margin: 4px 0;
-  }
 
+/* Medium field styles */
+.mediumfield {
+  display: flex;
+  width: 300px;
+  flex-direction: column;
+  margin: 4px 0;
+}
+
+/* Small field styles */
 .smallfield {
   display: flex;
   width: 150px;
@@ -91,120 +144,233 @@ select {            /* drop down */
   margin: 4px 0;
 }
 
+/* Dual field styles */
 .form-row.dualfield {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px; /* Adds space between two fields */
-  }
-  
-  .dualfield .twofield {
-    display: flex;
-    flex-direction: column;
-    width: 80%; 
-    margin: 4px 0;
-  }
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
 
-  textarea {
-    width: 550px;
-    height: 100px; 
-    margin: 8px 0;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    padding: 10px;
-    font-size: 14px;
-    box-sizing: border-box;
-    resize: none; /* Prevent resizing */
-  }
-  
-  .additional-section .largefield {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .additional-section label {
-    font-size: 15px;
-    margin-bottom: 5px;
-    color: white;
-  }
-  
-  .spacer-150 {
-    height: 150px; /* blank space */
-  }
+/* Twofield styles within dualfield */
+.dualfield .twofield {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 4px 0;
+}
 
-  .spacer-50 {
-    height: 50px; /* blank space */
-  }
+/* Textarea styles */
+textarea {
+  width: 550px;
+  height: 100px;
+  margin: 8px 0;
+  padding: 10px;
+  resize: none;
+  color: white;
+}
 
-  .spacer-20 {
-    height: 20px; /* blank space */
-  }
+/* Additional section styles */
+.additional-section .largefield {
+  display: flex;
+  flex-direction: column;
+}
 
-  .centersign{
-    display: flex;
-    justify-content: center; /* Horizontally center */
-    align-items: center;
-    margin-left: 455px;
+/* Labels within additional section */
+.additional-section label {
+  font-size: 15px;
+  margin-bottom: 5px;
+  color: white;
+}
 
-  }
-  .signsection {
-    display: flex;
-    justify-content: space-between;
-    gap: 250px; /* Adds space between two fields */
-    
-  }
-  
-  .signsection .signfield {
-    display: flex;
-    flex-direction: column;
-    width: 250px; 
-    margin: 4px 0;
-  }
+/* Spacer styles */
+.spacer-150 {
+  height: 150px;
+}
 
-  
-  .signfield label {
-    color: #fff; /* Adjust to match your design */
-    text-align: center; /* Center-align label text */
-  }
-  .center{
-    display: flex;
-    justify-content: center; /* Horizontally center */
-    align-items: center;
-    margin-left: 455px;
-    margin-top: 50px;
-  }
+.spacer-50 {
+  height: 50px;
+}
 
+.spacer-20 {
+  height: 20px;
+}
 
-  .form-footer {
-    display: flex;
-    flex-direction: column; 
-    gap: 10px; 
-    margin-top: 30px; 
-    margin-left: 900px;
-    align-items: flex-end; 
+/* Center sign styles */
+.centersign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 455px;
+}
 
-  }
-  
-  .submit, .cancel {
-    width: 200px; /* Set consistent button width */
-    height: 40px; /* Set button height */
-    border: none;
-    border-radius: 27.5px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  .cancel {
-    background-color: #215064;
-    color: white;
-    border: 3px solid #fff;
-  }
-  
-  .submit {
-    background-color: #FCDD62; /* Red for cancel */
-    color: #215064;
-  }
-  
+/* Sign section styles */
+.signsection {
+  display: flex;
+  justify-content: space-between;
+  gap: 250px;
+}
 
+/* Sign field styles within sign section */
+.signsection .signfield {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  margin: 4px 0;
+}
 
+/* Label styles within sign fields */
+.signfield label {
+  color: #fff;
+  text-align: center;
+}
 
+/* Center alignment styles */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 455px;
+  margin-top: 50px;
+}
+
+/* Form footer styles */
+.form-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 30px;
+  margin-left: 900px;
+  align-items: flex-end;
+}
+
+/* Submit and cancel button styles */
+.submit,
+.cancel {
+  width: 200px;
+  height: 40px;
+  border: none;
+  border-radius: 27.5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Cancel button styles */
+.cancel {
+  background-color: #215064;
+  color: white;
+  border: 3px solid #fff;
+}
+
+/* Submit button styles */
+.submit {
+  background-color: #FCDD62;
+  color: #215064;
+}
+
+/* General label styles */
+label {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 5px;
+  color: white;
+}
+
+/* Input and select styles */
+input,
+select {
+  height: 30px;
+  padding: 5px;
+  color: white;
+}
+
+/* Form table styles */
+.form-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+/* Form table cell styles */
+.form-table td {
+  padding: 5px;
+}
+
+/* Name field styles */
+.namefield {
+  width: 500px;
+}
+
+/* Age field styles */
+.agefield {
+  width: 100px;
+}
+
+/* Gender field styles */
+.genderfield {
+  width: 150px;
+}
+
+/* Input and select styles within fields */
+.namefield input,
+.agefield input,
+.genderfield select {
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0;
+  padding: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* Indented paragraph styles */
+p.indent {
+  text-indent: 40px;
+  font-family: var(--font-inter);
+}
+
+/* Certification field styles */
+.certlargefield,
+.certmediumfield,
+.certsmallfield {
+  margin: 10px;
+}
+
+/* Certification large field styles */
+.certlargefield {
+  width: 500px;
+  height: 25px;
+}
+
+/* Certification medium field styles */
+.certmediumfield {
+  width: 125px;
+  height: 25px;
+}
+
+/* Certification small field styles */
+.certsmallfield {
+  width: 100px;
+  height: 25px;
+}
+
+/* No margin field styles */
+.nomarginfield {
+  width: 500px;
+  height: 25px;
+}
+
+/* No margin date field styles */
+.nomargindatefield {
+  width: 125px;
+  height: 25px;
+}
+
+/* Focus styles for certification fields */
+.certlargefield:focus,
+.certsmallfield:focus,
+.certmediumfield:focus {
+  border-bottom: 2px solid #3498db;
+}

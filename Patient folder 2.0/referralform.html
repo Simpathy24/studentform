@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@800&display=swap">
+  <title>Patient Management System</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>Referral Form</header>
+
+    <form action="#">
+      <div class="form first">
+        <div class="details personal">
+          <div class="endfields">
+            <div class="datefield">
+              <label>Date:</label>
+              <input type="date" required>
+            </div>
+          </div>
+         
+          <div class="largefield">
+            <label for="tofield">To:</label>
+            <textarea id="tofield" rows="4" placeholder=" " required></textarea>
+          </div>
+
+          <div class="spacer-20"></div> <!-- add space-->
+
+          <table class="form-table">
+            <tr>
+              <td class="namefield">
+                <label for="name">NAME:</label>
+                <input type="text" id="name" placeholder="Full Name" required>
+              </td>
+              <td class="agefield">
+                <label for="age">AGE:</label>
+                <input type="number" id="age" placeholder="Age" required>
+              </td>
+              <td class="genderfield">
+                <label for="gender">GENDER:</label>
+                <select id="gender" required>
+                  <option value="" disabled selected>Select Gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="other">Other</option>
+                </select>
+              </td>
+            </tr>
+          </table>
+
+          <div class="spacer-50"></div> <!-- add space-->
+
+          <div class="largefield">
+            <label for="comment">HISTORY PRESENT ILLNESS:</label>
+            <textarea id="comment" rows="4" placeholder=" " required></textarea>
+          </div>
+
+          <div class="spacer-20"></div> <!-- add space-->
+
+          <div class="largefield">
+            <label for="comment">PERTINENT PHYSICAL EXAMINATION FINDINGS:</label>
+            <textarea id="comment" rows="4" placeholder=" " required></textarea>
+          </div>
+
+          <div class="spacer-20"></div> <!-- add space-->
+
+          <div class="largefield">
+            <label for="comment">IMPRESSION:</label>
+            <textarea id="comment" rows="4" placeholder=" " required></textarea>
+          </div>
+
+          <div class="spacer-20"></div> <!-- add space-->
+
+          <div class="largefield">
+            <label for="comment">REASON FOR REFERRAL:</label>
+            <textarea id="comment" rows="4" placeholder=" " required></textarea>
+          </div>
+
+          <div class="spacer-20"></div> <!-- add space-->
+
+          <label>THANK YOU</label>
+
+          <div class="spacer-50"></div> <!-- add space-->
+
+          <div class="mediumfield">
+            <input type="text" placeholder=" " required>
+            <label>PHYSICIAN:</label>
+          </div>
+    
+    <div class="form-footer">
+        <button type="button" class="cancel">Cancel</button>
+        <button type="submit" class="submit">Submit</button>
+      </div>
+
+        </div>
+        </div>
+        </div>
+
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -523,9 +523,7 @@ input[type="radio"] {
 }
 
 /* Date input alignment */
-input[type="date"] {
-  width: 100%;
-}
+
 
 .certification {
   font-size: 14px;
@@ -550,9 +548,7 @@ input[type="checkbox"] {
   margin-right: 5px;
 }
 
-.specific-twofield .datefield {
-width: 300px;
-}
+
 
 .certification h4 {
   font-size: 20px;

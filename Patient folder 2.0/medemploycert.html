@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@800&display=swap">
+  <title>Medical Certificate</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <form action="#">
+      <div class="form first">
+        <div class="details personal">
+          
+          <header>
+            <h1>MEDICAL CERTIFICATE</h1>
+            <p>(For Employment)</p>
+          </header>
+
+          <div class="spacer-50"></div> <!-- add space-->
+
+          <section class="instructions">
+            <h3>INSTRUCTIONS</h3>
+            <p>a. This certificate should be accomplished by a licensed government physician.</p>
+            <p>b. Attach this certificate to original appointment, transfer, and reemployment.</p>
+            <p>c. The results of the following pre-employment medical/physical must be attached to this form:</p>
+            <div class="checkbox-list">
+              <label><input type="checkbox"> Blood Test</label>
+              <label><input type="checkbox"> Urinalysis</label>
+              <label><input type="checkbox"> Chest X-Ray</label>
+              <label><input type="checkbox"> Drug Test</label>
+              <label><input type="checkbox"> Psychological Test</label>
+              <label><input type="checkbox"> Neuro-Psychiatric examination (if applicable)</label>
+            </div>
+          </section>
+
+          <div class="spacer-50"></div> <!-- add space-->
+
+          <section class="appointee-details">
+            <h3>FOR THE PROPOSED APPOINTEE</h3>
+            
+              <div class="form-row dualfield">
+                  <div class="dosfield">
+                    <label>NAME (Last Name, First Name, Name Extension (if any) and Middle Name)</label>
+                    <input type="text" placeholder=" " required />
+                  </div>
+                  <div class="dosfield">
+                    <label>AGENCY / ADDRESS</label>
+                    <input type="text" placeholder=" " required />
+                  </div>
+                </div>
+        
+              <div class="largefield">
+                <label>AGENCY / ADDRESS</label>
+                <input type="text" id="name" placeholder=" " required>
+              </div>
+            
+            <div class="form-row dualfield">
+              <div class="smallfield">
+                <label>AGE</label>
+                <input type="text" id="name" placeholder=" " required>
+              </div>
+              <div class="smallfield">
+                  <label>Sex:</label>
+                  <select required>
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                  </select>
+              </div>
+              <div class="smallfield">
+                  <label>Civil Status:</label>
+                  <select required>
+                    <option value="" disabled selected>Select Civil Status</option>
+                    <option value="Single">Single</option>
+                    <option value="Married">Married</option>
+                    <option value="Divorced">Divorced</option>
+                    <option value="Widowed">Widowed</option>
+                  </select>
+                </div>
+              <div class="largefield">
+                <label>PROPOSED POSITION</label>
+                <input type="text" id="name" placeholder=" " required>
+              </div>
+            </div>
+          </section>
+        
+          <div class="spacer-50"></div> <!-- add space-->
+
+          <div class="certification">
+            <h4>INSTRUCTIONS</h4>
+
+            <p>
+              I hereby certify that I have reviewed and evaluated the attached examination results, personally examined the
+              above-named individual, and found him/her to be physically and medically
+              <label class="checkbox-inline">
+                <input type="checkbox" name="fit-status" /> FIT /
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" name="fit-status" /> UNFIT
+              </label>
+              for employment.
+            </p>
+          </div>
+
+          <div class="form-row dualfield">
+            <div class="twofield">
+              <label>SIGNATURE over PRINTED NAME OF LICENSED GOVERNMENT PHYSICIAN:</label>
+              <input type="text" placeholder=" " required />
+            </div>
+            <div class="twofield">
+              <label>OTHER INFORMATION ABOUT THE PROPOSED APPOINTEE</label>
+              <textarea></textarea>
+            </div>
+          </div>
+
+          <div class="form-row dualfield">
+            <div class="largefield">
+              <label>License No.</label>
+              <input type="text" id="name" placeholder=" " required>
+            </div>
+            <div class="smallfield">
+              <label>Height</label>
+              <input type="text" id="name" placeholder=" " required>
+            </div>
+            <div class="smallfield">
+              <label>Weight</label>
+              <input type="text" id="name" placeholder=" " required>
+            </div>
+            <div class="largefield">
+              <label>Blood Type</label>
+              <input type="text" id="name" placeholder=" " required>
+            </div>
+          </div>
+
+          <div class="form-row dualfield">
+            <div class="twofield">
+              <label>Official Designation</label>
+              <input type="text" placeholder=" " required />
+            </div>
+            <div class="form-row">
+              <div class="twofield specific-twofield">
+                  <div class="datefield">
+                    <label>Date Examined</label>
+                    <input type="date" required />
+                  </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="spacer-50"></div> <!-- add space-->
+
+        </div>
+        </div> 
+
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

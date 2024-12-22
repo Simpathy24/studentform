@@ -40,7 +40,7 @@ body {
 header {
   text-align: center;
   font-size: 2rem;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   font-family: var(--font-archivo);
 }
 
@@ -184,6 +184,13 @@ select option {
 
 /* Twofield styles within dualfield */
 .dualfield .twofield {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 4px 0;
+}
+
+.dualfield .dosfield {
   display: flex;
   flex-direction: column;
   width: 80%;
@@ -427,4 +434,129 @@ p.indent {
 .certsmallfield:focus,
 .certmediumfield:focus {
   border-bottom: 2px solid #3498db;
+}
+
+/* Header styles */
+header h1 {
+  font-size: 24px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+header p {
+  font-size: 18px;
+}
+
+/* Instructions section */
+
+/* Center align instructions */
+.instructions {
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+  color: white;
+}
+
+.instructions h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.instructions p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+/* Checkbox list as a column */
+.checkbox-list {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.checkbox-list label {
+  display: block;
+  font-size: 16px;
+  line-height: 1.8;
+}
+.form-row .dosfield:nth-child(2) {
+  margin-top: 20px; /* Add your desired margin */
+}
+
+.instructions h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.instructions ul {
+  list-style: none;
+  padding: 0;
+}
+
+.instructions ul li {
+  margin: 5px 0;
+}
+
+.instructions input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* Section headings */
+section h3 {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Textarea styles */
+textarea {
+  width: 100%;
+  height: 80px;
+  resize: none;
+}
+
+/* Radio buttons */
+input[type="radio"] {
+  margin-left: 10px;
+}
+
+/* Date input alignment */
+input[type="date"] {
+  width: 100%;
+}
+
+.certification {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #ffffff; /* Adjust text color as necessary */
+}
+
+.certification p {
+  margin: 0;
+  padding: 10px;
+}
+
+.checkbox-inline {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 5px;
+  vertical-align: middle; /* Adjust vertical alignment */
+}
+
+input[type="checkbox"] {
+  position: relative;
+  margin-right: 5px;
+}
+
+.specific-twofield .datefield {
+width: 300px;
+}
+
+.certification h4 {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
 }

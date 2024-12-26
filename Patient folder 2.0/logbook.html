@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@800&display=swap">
+  <title>Patient Management System</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>Health Examination Record</header>
+
+    <form action="#">
+      <div class="form first">
+        <div class="details personal">
+          <div class="endfields">
+            <div class="datefield">
+              <label>Date:</label>
+              <input type="date" required>
+            </div>
+          </div>
+          <div class="mediumfield">
+            <label>Name:</label>
+            <input type="text" placeholder="Full Name" required>
+          </div>
+          <div class="largefield">
+            <label>Complaint:</label>
+            <input type="text" placeholder="Complaint" required>
+          </div>
+          <div class="smallfield">
+            <label>Course Yr/Section:</label>
+            <input type="text" placeholder="Course Yr/Section" required>
+          
+
+            <div class="spacer-50"></div> <!-- add space-->
+
+        <span>TRANSACTION</span>
+
+        <div class="spacer-20"></div> <!-- add space-->
+
+        <div class="form-row dualfield">
+            <div class="twofield">
+                <label>Time Started:</label>
+                <input type="time">
+            </div>
+            <div class="twofield">
+                <label>Time Finished:</label>
+                <input type="time">
+            </div>
+        </div>
+
+      <div class="spacer-50">
+      </div> <!--add space-->
+
+      <div class="largefield">
+        <label>Medication treatment:</label>
+        <input type="text" placeholder="Medication treatment" required>
+      </div>
+      <div class="mediumfield">
+        <label>Signature:</label>
+        <input type="text" placeholder="Signature" required>
+      </div>
+      <div class="mediumfield">
+        <label>Remarks:</label>
+        <input type="text" placeholder="Remarks" required>
+      </div>
+
+      
+      <div class="spacer-20">
+      </div> <!--add space-->
+
+      
+    
+    <div class="form-footer">
+        <button type="button" class="cancel">Cancel</button>
+        <button type="submit" class="submit">Submit</button>
+      </div>
+
+        </div>
+        </div>
+        
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

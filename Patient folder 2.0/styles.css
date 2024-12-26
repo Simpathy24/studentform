@@ -556,3 +556,119 @@ input[type="checkbox"] {
   margin-bottom: 10px;
   text-align: center;
 }
+
+
+/* Login Html */
+.logincontainer {
+  width: 890px;
+  height: 670px;
+  background: white;
+  margin: 50px auto;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.logincontainer .left {
+  width: 41%;
+  background: url(image.png) no-repeat center center;
+  background-size: cover;
+}
+
+.logincontainer .right {
+  width: 59%;
+  background-color: #215064;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formbox {
+  width: 80%;
+  height: 100%;
+  color: white;
+  position: relative;
+}
+
+.formbox img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.formbox h1 {
+  font-family: 'Archivo', sans-serif;
+  text-align: center;
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.formbox p {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.formbox input {
+  padding: 10px;
+  padding-left: 25px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  background-color: white;
+  border-bottom: white;
+  border-radius: 40.5px;
+  width: 388px;
+  height: 53px;
+  color: #999;
+
+  
+}
+
+.formbox .logo{
+  position: absolute;
+    display: block;
+    width: 97px; /* Adjust the size of the logo */
+    height: 97px;
+    margin-top: 50px;
+}
+
+
+.formbox input::placeholder {
+  font-size: 18px;
+  color: #999;
+}
+
+.loginsubmit {
+  width: 189px;
+  height: 60px;
+  padding: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #fcdd62;
+  color: #215064;
+  border: none;
+  border-radius: 40.5px;
+  cursor: pointer;
+}
+
+.loginsubmit:hover {
+  background-color: #fbcf45;
+}
+
+.formspace{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+
+.logincenter {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* This ensures the container takes up the full height of the viewport */
+}
+

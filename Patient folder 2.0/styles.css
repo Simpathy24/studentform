@@ -672,3 +672,90 @@ input[type="checkbox"] {
   height: 100%; /* This ensures the container takes up the full height of the viewport */
 }
 
+/* Encapsulating styles under a unique parent class */
+.unique-table-layout {
+  font-family: Arial, sans-serif;
+  background-color: #215064;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.unique-table-layout .header {
+  display: flex;
+  justify-content: space-between; /* Push content to the ends */
+  align-items: center; /* Vertically center items */
+  padding: 0 20px;
+}
+
+.unique-table-layout .search-bar input {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 300px;
+  background-color: #fff; /* White background */
+  color: #215064; /* Text color */
+  font-size: 14px;
+}
+
+.unique-table-layout .search-bar input::placeholder {
+  color: #215064; /* Placeholder text color */
+  opacity: 0.8; /* Slightly faded placeholder */
+}
+
+.unique-table-layout .add-record-btn {
+  padding: 8px 16px;
+  background-color: white;
+  color: #215064;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.unique-table-layout .add-record-btn:hover {
+  background-color: #fbcf45;
+}
+
+.unique-table-layout .table-container {
+  margin: 20px;
+  background-color: white;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
+.unique-table-layout table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.unique-table-layout thead {
+  background-color: #003846;
+  color: #fff;
+}
+
+.unique-table-layout th,
+.unique-table-layout td {
+  text-align: left;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.unique-table-layout th {
+  font-weight: bold;
+}
+
+.unique-table-layout td {
+  background-color: #f9f9f9;
+}
+
+.containertable {
+  max-width: 2000px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #215064;
+  padding: 30px;
+  color: white;
+  border-radius: 6px;
+}
